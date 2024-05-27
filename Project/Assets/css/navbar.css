@@ -1,0 +1,89 @@
+.logo img {
+    width: 260px;
+    margin: 0px 0px 0px -40px;
+  }
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Increase font size */
+}
+.navbar-nav .dropdown-menu .dropdown-item {
+    font-size: 18px; /* Increase font size for dropdown items */
+}
+.form-control {
+    font-size: 16px; /* Increase font size for search input */
+}
+.btn {
+    font-size: 16px; /* Increase font size for button */
+}
+.nav-item{
+    margin: 0px 10px 0px 20px !important;
+}
+
+/* button */
+
+.sign-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 9%;
+  }
+  
+  .button {
+    height: 45px;
+    margin: 15% 2%;
+    --color: #2a9df4;
+    padding: 0.5em 1.0em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    margin-left: -25px;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    display: inline-block;
+    white-space: nowrap;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: #d0efff;
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+
+/* button */
